@@ -18,7 +18,7 @@ pipeline{
                 bat "dotnet build --no-restore"
             }
         }
-        stage(Run tests) {
+        stage("Run tests") {
             failFast true
             parallel{
                 stage("Run tests for Project 1"){
